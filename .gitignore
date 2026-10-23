@@ -1,0 +1,6 @@
+build/
+benchmark_opt
+benchmark_tsan
+run_tests
+*.o
+.vscode/
