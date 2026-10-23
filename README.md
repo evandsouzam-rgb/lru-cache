@@ -2,7 +2,7 @@
 
 Thread-safe LRU cache in C++17 with optional TTL, plus a sharded version to cut down on lock contention. It's header only, so you just include `LRUCache.hpp` or `ShardedCache.hpp`.
 
-I built this to see how much a single lock actually slows a cache down when a bunch of threads are hitting it at once, and whether splitting it into shards fixes that.
+I built this to see how much a single lock actually slows a cache down when a bunch of threads are hitting it at once, and whether splitting it into shards fixes that. Inspired by my ECE 4122 class and LeetCode problem 146.
 
 ```cpp
 #include "ShardedCache.hpp"
